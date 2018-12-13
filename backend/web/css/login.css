@@ -1,0 +1,50 @@
+body{
+    /*background-image: url("../images/07.jpeg");
+    background-size: cover;*/
+    background-color: #d9dce0;
+}
+div.login{
+    width: 360px; margin: 7% auto 0;
+}
+h1.login-title{
+    margin-bottom: 10px; text-align: center;
+}
+div.login-box{
+    background-color: white;
+    padding: 30px 10px;
+    //box-shadow: 2px 0 2px rgba(0,0,0,0.3);
+}
+input:not([type="checkbox"]){
+    width: 100%;
+    height: 35px;
+    border: 1px solid #ccc6c6;
+    padding-left: 5px;
+}
+input:focus:not([type="checkbox"]){
+    border: none;
+    outline: #3c8dbc 1px solid;
+}
+div.checkbox{
+    display: inline;
+}
+div.checkbox label {
+    color: #a5a5a5;
+}
+div.forgetPassword{
+    float: right;
+}
+button.submit{
+    display:block;
+    width: 100%;
+    background-color: #3c8dbc;
+    border: none;
+    height:35px;
+    color: white;
+}
+button.submit:hover{
+    background-color: #367fa9;
+    border: #204d74 1px solid;
+}
+button.submit:focus{
+    outline: none;
+}
