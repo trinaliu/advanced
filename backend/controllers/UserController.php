@@ -70,6 +70,7 @@ class UserController extends BaseController
     }
 
     /**
+     * 编辑页面
      * @param $id
      * @return string
      * @throws \yii\web\NotFoundHttpException

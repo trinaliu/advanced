@@ -2,47 +2,31 @@
 /**
  * Created by PhpStorm.
  * user: trina
- * Date: 18-12-11
- * Time: 下午3:48
+ * Date: 18-12-14
+ * Time: 上午9:45
  */
-
-use kartik\builder\Form;
-use kartik\builder\FormGrid;
 use kartik\form\ActiveForm;
+use kartik\builder\FormGrid;
+use kartik\builder\Form;
 use yii\helpers\Html;
 
 $this->title = 'Create';
-$this->params['breadcrumbs'][] = ['label' => 'Admin User', 'url' => ['user/index']];
+$this->params['breadcrumbs'][] = ['label' => 'Role', 'url' => 'index'];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="user-create">
+<div class="role-create">
     <?php $form = ActiveForm::begin();?>
     <?=FormGrid::widget([
         'model' => $model,
         'form' => $form,
         'rows' => [
             [
-                'contentBefore'=>'<legend class="text-info"><small>Admin User Info</small></legend>',
+                'contentBefore' => '<legend class="text-info"><small>Role Info</small></legend>',
                 'attributes' => [
-                    'email' => [
+                    'name' => [
                         'type' => Form::INPUT_TEXT,
                     ],
-                    'password' => [
-                        'type' => Form::INPUT_PASSWORD,
-                    ]
                 ],
-            ],
-            [
-                'attributes' => [
-                    'is_admin' => [
-                        'type' => Form::INPUT_RADIO_LIST,
-                        'items' => Yii::$app->params['is_admin'],
-                        'options' => [
-                            'inline' => true,
-                            'value' => 0,
-                        ],
-                    ]
-                ]
             ],
             [
                 'attributes' => [
@@ -52,7 +36,7 @@ $this->params['breadcrumbs'][] = $this->title;
                             Html::resetButton('Reset', ['class'=>'btn btn-secondary']) . ' ' .
                             Html::submitButton('Submit', ['class'=>'btn btn-primary']) .
                             '</div>'
-                    ],
+                    ]
                 ]
             ]
         ]

@@ -47,8 +47,8 @@ AppAsset::register($this);
             <ul class="nav nav-sidebar" id="nav">
                 <li >Permission settings</li>
                 <li><a href="/user/index">Admin User</a></li>
-                <li><a href="#">Role</a></li>
-                <li><a href="#">Permission</a></li>
+                <li><a href="/role/index">Role</a></li>
+                <li><a href="/permission/index">Permission</a></li>
             </ul>
         </div>
         <div class="col-md-10 col-sm-9 col-md-offset-2 col-sm-offset-3">

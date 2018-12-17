@@ -41,14 +41,16 @@ $this->params['breadcrumbs'][] = $this->title;
                 'format' => 'raw',
                 'value' => function($model) {
                     return judge('is_admin', $model->is_admin);
-                }
+                },
+                'filter' => Yii::$app->params['is_admin'],
             ],
             [
                 'attribute' => 'status',
                 'format' => 'raw',
                 'value' => function($model) {
                     return judge('status', $model->status);
-                }
+                },
+                'filter' => Yii::$app->params['status'],
             ],
             [
                 'attribute' => 'created_at',
